@@ -3,7 +3,7 @@ public class Main {
      homeWork1();
      homeWork2();
      homeWork3();
-     homeWork4();
+    homeWork4();
     }
     public static void homeWork1 (){
         System.out.println("Задача 1");
@@ -24,16 +24,27 @@ public class Main {
         double [] number1= {1.57, 7.654, 9.986};
         String [] stroka = {"one", "two", "three", "four"};
         for (int i = 0; i < number.length; i++) {
-            System.out.println(number[i] + ", ");
+            if(number.length - 1 >i){
+                System.out.print(number[i] + ", ");
+            }else {
+                System.out.print(number[i]);
+            }
         }
-
+        System.out.println();
         for (int i = 0; i < number1.length; i++) {
-            System.out.println(number1[i] + ", ");
+            if(number1.length - 1 >i){
+                System.out.print(number1[i] + ", ");
+            }else {
+                System.out.print(number1[i]);
+            }
         }
-
+        System.out.println();
         for (int i = 0; i < stroka.length; i++) {
-            System.out.println(stroka[i] + ", ");
-
+            if(stroka.length - 1 >i){
+                System.out.print(stroka[i] + ", ");
+            }else {
+                System.out.print(stroka[i]);
+            }
         }
         System.out.println();
 
@@ -47,15 +58,27 @@ public class Main {
         double [] number1= {1.57, 7.654, 9.986};
         String [] stroka = {"one", "two", "three", "four"};
         for (int i = number.length - 1; i >= 0; i--) {
-            System.out.print(number[i] + ", ");
+            if (i > 0){
+                System.out.print(number[i] + ", ");
+            }else {
+                System.out.print(number[i]);
+            }
         }
         System.out.println();
         for (int i = number1.length - 1; i >= 0; i--) {
-            System.out.print(number1[i] + ", ");
+            if (i > 0){
+                System.out.print(number1[i] + ", ");
+            }else {
+                System.out.print(number1[i]);
+            }
         }
         System.out.println();
         for (int i = stroka.length -1; i>= 0; i--){
-            System.out.print(stroka[i]+ ", ");
+            if (i > 0){
+                System.out.print(stroka[i] + ", ");
+            }else {
+                System.out.print(stroka[i]);
+            }
         }
         System.out.println();
     }
@@ -68,9 +91,9 @@ public class Main {
         for (int i = 0; i < number.length; i++) {
             if (number[i] % 2 == 1) {
                 number[i] = number[i] + 1;
-                System.out.println(number[i]);
             }
-            System.out.println();
+            System.out.print(number[i] + " ");
+
 
         }
         System.out.println();
